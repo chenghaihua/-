@@ -206,15 +206,9 @@
             }
         };
 
-       new MovePic({
-           wrap:document.querySelector("#wrap"),
-           list:document.querySelector("#list"),
-           btnWrap:document.querySelector("#nav"),
-           autoPlay:true
-       });
-
-
-
+      window.movePic=function(opt){
+          new MovePic(opt);
+      };
 
 
         //获取transform
@@ -258,12 +252,12 @@
         }
     })();
 
-   /* movePic({
+    movePic({
         wrap:document.querySelector("#wrap"),
         list:document.querySelector("#list"),
         btnWrap:document.querySelector("#nav"),
         autoPlay:true
-    });*/
+    });
 </script>
 </body>
 </html>
